@@ -195,6 +195,12 @@ body {
       }
     }
 
+    .product-section-wrapper {
+
+      @include d-flex(space-between, center);
+      padding-top: 4rem;
+      padding-right: 4rem;
+
     .product-card-wrapper {
       @include d-flex(flex-start, center);
 
@@ -249,5 +255,6 @@ body {
         }
       }
     }
+  }
   }
 }

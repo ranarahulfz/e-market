@@ -59,39 +59,82 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
+          {/* Product Wrapper Starts */}
+          <div className="product-section-wrapper">
+            {/* Product Card 1 */}
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image"></div>
+                <div className="product-desc">
+                  <div className="container">
+                    <div className="product-name">Face Mask</div>
+                    <div className="product-details">Grape Fruit</div>
+                  </div>
 
-          <div className="product-card-wrapper">
-            <div className="product-card">
-              <div className="product-image"></div>
-              <div className="product-desc">
-                <div className="container">
-                  <div className="product-name">Face Mask</div>
-                  <div className="product-details">Grape Fruit</div>
-                </div>
-
-                <div className="footer">
-                  <div className="product-price">$16,00</div>
-                  <div className="add-to-cart-btn"></div>
+                  <div className="footer">
+                    <div className="product-price">$16,00</div>
+                    <div className="add-to-cart-btn"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="product-card-wrapper">
-            <div className="product-card">
-              <div className="product-image"></div>
-              <div className="product-desc">
-                <div className="container">
-                  <div className="product-name">Face Mask</div>
-                  <div className="product-details">Grape Fruit</div>
-                </div>
+            {/* Product Card 1 End */}
+            {/* Product Card 2 */}
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image"></div>
+                <div className="product-desc">
+                  <div className="container">
+                    <div className="product-name">Face Mask</div>
+                    <div className="product-details">Grape Fruit</div>
+                  </div>
 
-                <div className="footer">
-                  <div className="product-price">$16,00</div>
-                  <div className="add-to-cart-btn"></div>
+                  <div className="footer">
+                    <div className="product-price">$16,00</div>
+                    <div className="add-to-cart-btn"></div>
+                  </div>
                 </div>
               </div>
             </div>
+            {/* Product Card 2 Ends*/}
+            {/* Product Card 2 */}
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image"></div>
+                <div className="product-desc">
+                  <div className="container">
+                    <div className="product-name">Face Mask</div>
+                    <div className="product-details">Grape Fruit</div>
+                  </div>
+
+                  <div className="footer">
+                    <div className="product-price">$16,00</div>
+                    <div className="add-to-cart-btn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Product Card 2 Ends*/}
+            {/* Product Card 2 */}
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image"></div>
+                <div className="product-desc">
+                  <div className="container">
+                    <div className="product-name">Face Mask</div>
+                    <div className="product-details">Grape Fruit</div>
+                  </div>
+
+                  <div className="footer">
+                    <div className="product-price">$16,00</div>
+                    <div className="add-to-cart-btn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Product Card 2 Ends*/}
           </div>
+          {/* Product Container End Here*/}
         </div>
         {/* main-content end */}
       </div>
