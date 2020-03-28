@@ -1,13 +1,55 @@
+@font-face {
+	font-display: fallback;
+	font-family: 'Facebook Reader Regular';
+	font-style: normal;
+	font-weight: 500;
+	src: url(./assets/fonts/facebook/FacebookReader-Regular.woff2) format('woff2')
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: 'Facebook Reader Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url(./assets/fonts/facebook/FacebookReader-Medium.woff2) format('woff2')
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: 'Facebook Reader Bold';
+	font-style: normal;
+	font-weight: 500;
+	src: url(./assets/fonts/facebook/FacebookReader-Bold.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url(./assets/fonts/inter/Inter-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Interstate';
+  src: local('Interstate'), url(./assets/fonts/interstate/Interstate-Regular.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Eina Bold';
+  src: local('Eina'), url(./assets/fonts/eina/eina-01-bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Sailec';
+  src: local('Sailec'), url(./assets/fonts/sailec/SailecRegular.ttf) format('ttf');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Facebook Reader Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Interstate', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

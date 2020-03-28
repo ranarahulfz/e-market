@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600i,700,700i&display=swap");
+
+$hero-bg: "../../../assets/images/backgrounds/hero-bg.svg";
+
+$primary-font: "Facebook Reader Regular";
+$secondary-font: "Montserrat", sans-serif;
+$primary-color: #48368d;
+$primary-tcolor: #7e8a9a;
+$heavy-radius: 50px;
+$medium-radius: 25px;
+$light-radius: 12px;
+
+@mixin font($font, $weight, $fcolor) {
+  font-family: $font;
+  font-weight: $weight;
+  color: $fcolor;
+}
+
+@mixin round-shape($wsize, $hsize) {
+  width: $wsize;
+  height: $hsize;
+  border-radius: 50%;
+  @include shadow();
+  @include d-flex(center, center);
+}
+
+@mixin margin-padding($m, $p) {
+  margin: $m;
+  padding: $p;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin d-flex($content, $items) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+}
+
+@mixin shadow() {
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 1),
+    6px 6px 10px rgba(0, 0, 0, 0.1);
+  transition: all 500ms ease-in;
+}
+
+@mixin shadow-hover() {
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 1),
+    inset 6px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin card($padding, $margin, $radius) {
+  padding: $padding;
+  margin: $margin;
+  border-radius: $radius;
+  @include shadow();
+}
+
+body {
+  @include margin-padding(0, 0.8rem);
+}
+
+::placeholder {
+  color: $primary-color;
+  font-family: $primary-font;
+  font-weight: 600;
+}
+
+.main-container {
+  @include margin-padding(0, 0.8rem);
+  width: 100vw;
+  height: 100vh;
+  background: url($hero-bg) no-repeat;
+  background-size: 100vh;
+
+  .navbar {
+    height: 70px;
+    padding: 0.8rem 2.4rem;
+    @include d-flex(space-between, center);
+
+    .logo-container {
+      width: 50%;
+
+      .logo-img {
+        padding: 0.8rem;
+        background-color: white;
+        border-radius: 50%;
+        @include d-flex(center, center);
+        box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+          6px 6px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .menu-container {
+      @include d-flex(center, center);
+
+      .search-container {
+        margin-right: 4.8rem;
+      }
+
+      .cart-container,
+      .menu-icon {
+        margin-right: 2.4rem;
+      }
+
+      .search-container input.search-box {
+        padding: 0.8rem 1.2rem;
+        padding-right: 1.9rem;
+        width: 210px;
+        border: 0;
+        border-radius: 12px;
+        border: 2px solid #f3f3f3;
+
+        font-size: 16px;
+        color: $primary-color;
+        font-family: $primary-font;
+        font-weight: 600;
+        outline: none;
+      }
+
+      .search-container {
+        .search-icon {
+          position: relative;
+
+          img {
+            position: absolute;
+            bottom: 17px;
+            right: 13px;
+          }
+        }
+      }
+
+      .menu-icon img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+          6px 6px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .main-section {
+    padding: 0.8rem 2.4rem;
+    height: 70px;
+
+    .title-bar {
+      @include d-flex(space-between, center);
+
+      .left-part {
+        width: 50%;
+        @include d-flex(flex-start, center);
+
+        .title {
+          margin-right: 4.8rem;
+          font-size: 46px;
+          font-family: "Eina Bold";
+          color: $primary-color;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+        }
+
+        .menu-icon {
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          background: white;
+          @include d-flex(center, center);
+          box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+            6px 6px 20px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .right-part {
+        @include d-flex(flex-end, center);
+
+        .left-arrow,
+        .right-arrow {
+          border: 2px solid #f3f3f3;
+          margin: 0 0.8rem;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          background-color: white;
+          @include d-flex(center, center);
+        }
+
+        .right-arrow {
+          margin-right: 2.4rem;
+          border: 0;
+        }
+      }
+    }
+
+    .product-card-wrapper {
+      @include d-flex(flex-start, center);
+
+      .product-card {
+        @include width-height(250px, 380px);
+        @include margin-padding(0.8rem, 0.4rem);
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+          6px 6px 20px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+
+        .product-image {
+          height: 65%;
+        }
+
+        .product-desc {
+          padding: 1rem;
+          width: 100%;
+          height: 35%;
+          border-radius: 20px;
+          background-color: #776fc4;
+          box-sizing: border-box;
+          @include d-flex(space-between, flex-start);
+          flex-direction: column;
+
+          .product-name {
+            margin-bottom: 0.4rem;
+            text-align: left;
+            font-size: 28px;
+            font-family: "Facebook Reader Bold";
+            font-weight: 900;
+            letter-spacing: 0.001px;
+            color: #FFFFFF;
+          }
+
+          .product-details {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: #F1F0F9;
+          }
+
+          .footer {
+            .product-price {
+              text-align: left;
+              font-size: 18px;
+              font-weight: 800;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
